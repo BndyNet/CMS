@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Areas/Admin/settings.js",
+    "inputFile": "Areas/Admin/settings.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/controllers/RootCtrl.js",
+    "inputFile": "Areas/Admin/Content/controllers/RootCtrl.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/directives/form-input.js",
+    "inputFile": "Areas/Admin/Content/directives/form-input.coffee"
+  }
+]

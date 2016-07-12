@@ -1,4 +1,8 @@
 @settings =
+    appName: 'Bndy CMS'
+    appShortName: 'CMS'
+    appVersion: '1.0.0'
+    appUrl: 'http://www.bndy.net'
     enableSidebar: true
     menus: [
         {

@@ -46,6 +46,7 @@ namespace CMS.Web
                 "~/Areas/Admin/settings.js",
                 "~/Areas/Admin/Content/app.js",
                 "~/Areas/Admin/Content/directives/*.js",
+                "~/Areas/Admin/Content/controllers/*.js",
                 "~/js/angular-filters.js",
                 "~/js/angular-directives.js"
                 ));

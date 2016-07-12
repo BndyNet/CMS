@@ -118,11 +118,26 @@
     <Content Include="Areas\Admin\Content\app.js">
       <DependentUpon>app.coffee</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Content\controllers\RootCtrl.js">
+      <DependentUpon>RootCtrl.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\controllers\RootCtrl.min.js">
+      <DependentUpon>RootCtrl.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\directives\form-input.js">
+      <DependentUpon>form-input.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\directives\form-input.min.js">
+      <DependentUpon>form-input.js</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\site.css">
       <DependentUpon>site.scss</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\settings.js">
       <DependentUpon>settings.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\settings.min.js">
+      <DependentUpon>settings.js</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="images\logo.jpg" />
@@ -1780,6 +1795,12 @@
     <Content Include="Areas\Admin\settings.coffee" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutMain.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
+    <Content Include="Areas\Admin\Content\controllers\RootCtrl.coffee" />
+    <Content Include="Areas\Admin\Content\directives\form-input.coffee" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1789,7 +1810,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Content\directives\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
