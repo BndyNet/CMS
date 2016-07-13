@@ -12,5 +12,21 @@ namespace CMS.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Error()
+        {
+            //TODO: remove testing code
+            try
+            {
+                var i = 0;
+                i = 100 / i;
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = ex;
+            }
+            var model = TempData["Error"] as Exception;
+            return View(model);
+        }
     }
 }

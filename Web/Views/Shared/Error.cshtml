@@ -1,0 +1,38 @@
+﻿@model Exception
+
+<div class="jumbotron">
+    <h1>
+        :(
+        OOPS
+    </h1>
+    <p>
+        @Model.Message
+    </p>
+    @if (!string.IsNullOrWhiteSpace(Model.StackTrace))
+    {
+        <p id="Detail" style="display:none;">
+           @Model.StackTrace
+        </p>
+        <p>
+            <button id="btnMore" type="button" class="btn btn-primary btn-lg">More...</button>
+        </p>
+    }
+</div>
+
+@section scripts {
+    <script>
+        $(function () {
+            $('#btnMore').click(function () {
+                $('#Detail').toggle();
+                if ($(this).attr('on') == 'true') {
+                    $(this).text('More...');
+                    $(this).attr('on', false);
+                }
+                else {
+                    $(this).text('Less...');
+                    $(this).attr('on', true);
+                }
+            });
+        });
+    </script>
+}

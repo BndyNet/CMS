@@ -15,13 +15,15 @@ namespace CMS.Models
         public static readonly DateTime DbVersion = new DateTime(2016, 2, 25);
 
         public DbSet<AppException> AppExceptions { get; set; }
-        public DbSet<AppInformation> AppInformations { get; set; }
-        public DbSet<Article> Articles { get; set; }
+        //public DbSet<AppInformation> AppInformations { get; set; }
+        //public DbSet<Article> Articles { get; set; }
 
         public ModelContext()
             : base("DefaultConnection")
         {
             Configuration.LazyLoadingEnabled = false;
+
+            this.Database.CreateIfNotExists();
         }
 
         //static ModelContext()

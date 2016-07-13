@@ -17,7 +17,7 @@ namespace CMS.Web
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { nameof(CMS.Web.Controllers) }
+                namespaces: new string[] { "CMS.Web.Controllers" }
             );
         }
     }
